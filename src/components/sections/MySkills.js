@@ -1,16 +1,16 @@
-import React from 'react';
-import classNames from 'classnames';
-import { SectionTilesProps } from '../../utils/SectionProps';
-import SectionHeader from './partials/SectionHeader';
-import Language from '../elements/Language'
+import React from "react";
+import classNames from "classnames";
+import { SectionTilesProps } from "../../utils/SectionProps";
+import SectionHeader from "./partials/SectionHeader";
+import Skill from "../elements/Skill";
 
 const propTypes = {
-  ...SectionTilesProps.types
-}
+  ...SectionTilesProps.types,
+};
 
 const defaultProps = {
-  ...SectionTilesProps.defaults
-}
+  ...SectionTilesProps.defaults,
+};
 const MySkills = ({
   className,
   topOuterDivider,
@@ -22,50 +22,63 @@ const MySkills = ({
   pushLeft,
   ...props
 }) => {
-
   const outerClasses = classNames(
-    'features-tiles section',
-    topOuterDivider && 'has-top-divider',
-    bottomOuterDivider && 'has-bottom-divider',
-    hasBgColor && 'has-bg-color',
-    invertColor && 'invert-color',
+    "features-tiles section",
+    topOuterDivider && "has-top-divider",
+    bottomOuterDivider && "has-bottom-divider",
+    hasBgColor && "has-bg-color",
+    invertColor && "invert-color",
     className
   );
 
   const innerClasses = classNames(
-    'features-tiles-inner section-inner pt-0',
-    topDivider && 'has-top-divider',
-    bottomDivider && 'has-bottom-divider'
+    "features-tiles-inner section-inner pt-0",
+    topDivider && "has-top-divider",
+    bottomDivider && "has-bottom-divider"
   );
 
   const tilesClasses = classNames(
-    'tiles-wrap center-content',
-    pushLeft && 'push-left'
+    "tiles-wrap center-content",
+    pushLeft && "push-left"
   );
 
   const sectionHeader = {
-    title: 'Build up the whole picture',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
+    title: "Build up the whole picture",
+    paragraph:
+      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+  };
+
+  const skills = {
+    Javascript: {
+      name: "Javascript",
+      icon: "devicon-javascript-plain colored",
+    },
+    React: { name: "React", icon: "devicon-react-plain colored" },
+    Ruby: { name: "Ruby", icon: "devicon-ruby-plain colored" },
+    Redux: { name: "Redux", icon: "devicon-redux-plain colored" },
+    Nodejs: { name: "Nodejs", icon: "devicon-nodejs-plain colored" },
+    Express: { name: "Express", icon: "devicon-express-original colored" },
+    MongoDB: {
+      name: "MongoDB",
+      icon: "devicon-mongodb-plain-wordmark colored",
+    },
   };
 
   return (
-    <section
-      {...props}
-      className={outerClasses}
-    >
+    <section {...props} className={outerClasses}>
       <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-            {
-              <Language/>
-            }
+            {Object.keys(skills).map((skill) => {
+              return <Skill skill={skills[skill]} />;
+            })}
           </div>
         </div>
       </div>
     </section>
   );
-}
+};
 
 MySkills.propTypes = propTypes;
 MySkills.defaultProps = defaultProps;
