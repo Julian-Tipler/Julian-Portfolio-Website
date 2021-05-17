@@ -12,7 +12,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults
 }
 
-const FeaturesSplit = ({
+const MyProjects = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -149,7 +149,7 @@ const FeaturesSplit = ({
   );
 }
 
-FeaturesSplit.propTypes = propTypes;
-FeaturesSplit.defaultProps = defaultProps;
+MyProjects.propTypes = propTypes;
+MyProjects.defaultProps = defaultProps;
 
-export default FeaturesSplit;
+export default MyProjects;
