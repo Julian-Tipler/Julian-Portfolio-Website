@@ -5,16 +5,18 @@ import MySkills from '../components/sections/MySkills';
 import MyProjects from '../components/sections/MyProjects';
 import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
+import ContactMe from '../components/sections/ContactMe'
 
 const Home = () => {
 
   return (
     <>
       <Hero className="illustration-section-01" />
-      <MySkills />
-      <MyProjects invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial topDivider />
+      <MySkills id="my-skills"/>
+      <MyProjects id="my-projects" invertMobile topDivider imageFill className="illustration-section-02" />
+      <Testimonial id="my-testimonials" topDivider />
       <Cta split />
+      <ContactMe/>
     </>
   );
 }

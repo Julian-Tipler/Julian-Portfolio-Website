@@ -3,8 +3,6 @@ import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
-import Image from "../elements/Image";
-import Modal from "../elements/Modal";
 import profilePicture from "../../assets/images/profile-picture.jpg"
 
 const propTypes = {
@@ -46,48 +44,47 @@ const Hero = ({
       <div className="container-sm">
         <div className={innerClasses}>
           <div className="hero-content">
-            <h1
-              className="mt-0 mb-16 reveal-from-bottom"
-              data-reveal-delay="200"
-            >
-            Julian Tipler
-            </h1>
-            <div className="container-xs">
-              <p
-                className="m-0 mb-32 reveal-from-bottom"
-                data-reveal-delay="400"
+            <div className="left-side">
+              <h1
+                className="mt-0 mb-16 reveal-from-bottom"
+                data-reveal-delay="200"
               >
-                !!! tagline !!!
-              </p>
-              <div className="reveal-from-bottom" data-reveal-delay="600">
-                <ButtonGroup>
-                  <Button
-                    tag="a"
-                    color="primary"
-                    wideMobile
-                    href="https://cruip.com/"
-                  >
-                    LinkedIn
-                  </Button>
-                  <Button
-                    tag="a"
-                    color="dark"
-                    wideMobile
-                    href="https://github.com/cruip/open-react-template/"
-                  >
-                    Github
-                  </Button>
-                </ButtonGroup>
+                Julian Tipler
+              </h1>
+              <h3>
+                I learn fast and work hard
+              </h3>
+              <div className="container-xs">
+                <div className="reveal-from-bottom" data-reveal-delay="600">
+                  <ButtonGroup>
+                    <Button
+                      tag="a"
+                      color="primary"
+                      wideMobile
+                      href="https://www.linkedin.com/in/julian-t-87a2a0a4/"
+                    >
+                      LinkedIn
+                    </Button>
+                    <Button
+                      tag="a"
+                      color="dark"
+                      wideMobile
+                      href="https://github.com/Julian-Tipler"
+                    >
+                      Github
+                    </Button>
+                  </ButtonGroup>
+                </div>
               </div>
+
             </div>
+            <img className="profile-picture" src={profilePicture} />
           </div>
           <div
             className="hero-figure reveal-from-bottom illustration-element-01"
             data-reveal-value="20px"
             data-reveal-delay="800"
-          >
-            <img src={profilePicture}/>
-          </div>
+          ></div>
         </div>
       </div>
     </section>

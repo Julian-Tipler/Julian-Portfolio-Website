@@ -43,9 +43,9 @@ const MySkills = ({
   );
 
   const sectionHeader = {
-    title: "Build up the whole picture",
+    title: "What I know",
     paragraph:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.",
+      "At App Academy I learned a variety of languages and libraries and dove deep enough into each of them to write great full stack applications",
   };
 
   const skills = {
