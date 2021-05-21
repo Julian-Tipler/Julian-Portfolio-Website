@@ -54,7 +54,7 @@ const Cta = ({
         >
           <div className="cta-slogan">
             <h3 className="m-0">
-              Please reach out to me any time
+              Please reach out to me any time!
               </h3>
           </div>
         <ContactMe/>

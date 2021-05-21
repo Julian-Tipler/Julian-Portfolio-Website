@@ -73,11 +73,13 @@
 
 .profile-picture {
 	height: 50vh;
-	padding-bottom: 20px;
 }
 
 .hero-content {
-	display: flex
+	display: flex;
+	justify-content: space-around;
+	border: 5px solid rgb(86,88,221);
+	border-radius: 5px;
 }
 
 .left-side {
@@ -85,4 +87,9 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin: 10px
+}
+
+.hero-qoute{
+	margin: 10px;	
 }

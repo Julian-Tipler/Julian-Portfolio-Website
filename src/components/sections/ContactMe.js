@@ -3,8 +3,9 @@ import emailjs from "emailjs-com";
 
 export default function ContactMe() {
   const [email, setEmail] = useState({
-    subject: "",
-    message: "",
+    name: "",
+    address: "",
+    message: ""
   });
   const [emailSent, setEmailSent] = useState(false);
 
@@ -38,29 +39,40 @@ export default function ContactMe() {
 
   return (
     <div>
-      <form className="contact-form" onSubmit={sendEmail}>
-        <label>Subject</label>
-        <input
-          onChange={(e) => handleChange(e, email, setEmail)}
-          lassName="email-form-subject"
-          type="text"
-          value={email.subject}
-          name="subject"
-        />
-        <label>Message</label>
-        <textarea
-          onChange={(e) => handleChange(e, email, setEmail)}
-          className="email-form-message"
-          value={email.message}
-          name="message"
-        />
-        <input type="submit" value="Send" />
-      </form>
-      {emailSent === "sending" ? <div>sending...</div> : undefined}
-      {emailSent === true && (
+      {emailSent === true ? (
         <div>
           Thank you for your interest! I will do my best to reply to you within
           1-2 days.
+        </div>
+      ) : (
+        <div>
+          <form className="contact-form" onSubmit={sendEmail}>
+            <label>Name</label>
+            <input
+              onChange={(e) => handleChange(e, email, setEmail)}
+              className="email-form-name"
+              type="text"
+              value={email.name}
+              name="name"
+            />
+            <label>Email Address</label>
+            <input
+              onChange={(e) => handleChange(e, email, setEmail)}
+              className="email-form-address"
+              type="text"
+              value={email.address}
+              name="address"
+            />
+            <label>Message</label>
+            <textarea
+              onChange={(e) => handleChange(e, email, setEmail)}
+              className="email-form-message"
+              value={email.message}
+              name="message"
+            />
+            <input type="submit" value="Send" />
+          </form>
+          {emailSent === "sending" && <div>sending...</div>}
         </div>
       )}
     </div>
