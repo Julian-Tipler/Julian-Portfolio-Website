@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
@@ -81,7 +81,7 @@ const Hero = ({
                 </div>
               </div>
             </div>
-            <img className="profile-picture" src={profilePicture} />
+            <img alt='profile' className="profile-picture" src={profilePicture} />
           </div>
           <div
             className="hero-figure reveal-from-bottom illustration-element-01"
