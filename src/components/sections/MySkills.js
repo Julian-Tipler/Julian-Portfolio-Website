@@ -70,8 +70,8 @@ const MySkills = ({
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-            {Object.keys(skills).map((skill) => {
-              return <Skill skill={skills[skill]} />;
+            {Object.keys(skills).map((skill,i) => {
+              return <Skill key={i} skill={skills[skill]} />;
             })}
           </div>
         </div>

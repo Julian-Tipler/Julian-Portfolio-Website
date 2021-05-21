@@ -3,7 +3,6 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
-import { Link } from "react-router-dom";
 
 
 const propTypes = {
@@ -87,6 +86,7 @@ const MyProjects = ({
                 <a
                   target="_blank"
                   href="https://coincase-juliantipler.herokuapp.com/#/"
+                  rel="noopener noreferrer"
                 >
                   <Image
                     src={require("../../assets/images/coincase-demonstration.gif")}
@@ -123,6 +123,7 @@ const MyProjects = ({
                 <a
                   target="_blank"
                   href="https://findyoursquad.herokuapp.com/#/"
+                  rel="noopener noreferrer"
                 >
                   <Image
                     src={require("../../assets/images/accepting-members.gif")}
@@ -160,6 +161,7 @@ const MyProjects = ({
                 <a
                   target="_blank"
                   href="https://julian-tipler.github.io/BeatMachine/"
+                  rel="noopener noreferrer"
                 >
                   <Image
                     src={require("../../assets/images/BeatMachine.gif")}

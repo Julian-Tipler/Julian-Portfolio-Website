@@ -3,9 +3,7 @@ import React from 'react';
 import Hero from '../components/sections/Hero';
 import MySkills from '../components/sections/MySkills';
 import MyProjects from '../components/sections/MyProjects';
-import Testimonial from '../components/sections/Testimonial';
 import Cta from '../components/sections/Cta';
-import ContactMe from '../components/sections/ContactMe'
 
 const Home = () => {
 
