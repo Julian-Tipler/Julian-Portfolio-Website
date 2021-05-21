@@ -1,6 +1,10 @@
 // Footer (core/layout/_footer.scss)
 
 // Color
+.social-link>* {
+margin:5px;
+}
+
 $footer--color: (
 	block-title:			get-color(light, 1),
 	block-title-inverse:	get-color(dark, 1)

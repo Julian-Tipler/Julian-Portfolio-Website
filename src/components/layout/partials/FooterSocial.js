@@ -1,19 +1,19 @@
 import React from "react";
 import classNames from "classnames";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"; 
-import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
-import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { Link } from "react-router-dom";
 
 const FooterSocial = ({ className, ...props }) => {
   const classes = classNames("footer-social", className);
 
   return (
     <div {...props} className={classes}>
-
       <footer className="footer">
         <a
           href="https://github.com/Julian-Tipler"
-          className="github-links"
+          className="social-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -27,7 +27,7 @@ const FooterSocial = ({ className, ...props }) => {
         </a>
         <a
           href="https://www.linkedin.com/in/julian-t-87a2a0a4/"
-          className="github-links"
+          className="social-link"
           target="_blank"
           rel="noreferrer"
         >
@@ -38,6 +38,15 @@ const FooterSocial = ({ className, ...props }) => {
             icon={faLinkedin}
           ></FontAwesomeIcon>
           <p>Julian Tipler</p>
+        </a>
+        <a className="social-link">
+          <FontAwesomeIcon
+            target="_blank"
+            rel="noreferrer"
+            className="fa-lg"
+            icon={faEnvelope}
+          ></FontAwesomeIcon>
+          <p>tipler.julian@gmail.com</p>
         </a>
       </footer>
     </div>
