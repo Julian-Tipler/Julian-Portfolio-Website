@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from 'emailjs'
+import emailjs from "emailjs-com";
 
 export default function ContactMe() {
   const [email, setEmail] = useState({
@@ -41,7 +41,7 @@ export default function ContactMe() {
       <form className="contact-form" onSubmit={sendEmail}>
         <label>Subject</label>
         <input
-          onChange={handleChange}
+          onChange={(e) => handleChange(e, email, setEmail)}
           lassName="email-form-subject"
           type="text"
           value={email.subject}
@@ -49,7 +49,7 @@ export default function ContactMe() {
         />
         <label>Message</label>
         <textarea
-          onChange={handleChange}
+          onChange={(e) => handleChange(e, email, setEmail)}
           className="email-form-message"
           value={email.message}
           name="message"
