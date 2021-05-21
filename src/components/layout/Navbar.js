@@ -10,9 +10,9 @@ export default function Navbar() {
         <Link className="navButton" to="my-projects" smooth={true}>
           My projects
         </Link>
-        <Link className="navButton" to="my-testimonials" smooth={true}>
+        {/* <Link className="navButton" to="my-testimonials" smooth={true}>
           My testimonials
-        </Link>
+        </Link> */}
       </nav>
     );
 }

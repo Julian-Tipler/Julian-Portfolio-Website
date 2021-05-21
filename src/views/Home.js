@@ -14,9 +14,8 @@ const Home = () => {
       <Hero className="illustration-section-01" />
       <MySkills id="my-skills"/>
       <MyProjects id="my-projects" invertMobile topDivider imageFill className="illustration-section-02" />
-      <Testimonial id="my-testimonials" topDivider />
-      <Cta split />
-      <ContactMe/>
+      {/* <Testimonial id="my-testimonials" topDivider /> */}
+      <Cta split topDivider />
     </>
   );
 }

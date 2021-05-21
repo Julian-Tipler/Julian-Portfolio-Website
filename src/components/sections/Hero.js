@@ -51,9 +51,13 @@ const Hero = ({
               >
                 Julian Tipler
               </h1>
-              <h3>
-                I learn fast and work hard
-              </h3>
+              <p className='hero-qoute'>
+                "Julian was great at troubleshooting any bugs in our code, was
+                always available, and was the main facilitator of our strategic
+                planning discussions. He was a pleasure to work with and I would
+                10/10 recommend him to any organization looking for a software
+                engineer to add to their team.{" "}" -Niko Wells
+              </p>
               <div className="container-xs">
                 <div className="reveal-from-bottom" data-reveal-delay="600">
                   <ButtonGroup>
@@ -76,7 +80,6 @@ const Hero = ({
                   </ButtonGroup>
                 </div>
               </div>
-
             </div>
             <img className="profile-picture" src={profilePicture} />
           </div>

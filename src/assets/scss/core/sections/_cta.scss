@@ -29,9 +29,20 @@
 	.cta-slogan {
 		margin-bottom: $cta-slogan--padding-v__desktop;
 
-		.cta-split & {
-			margin-bottom: 0;
-			margin-right: $cta-slogan--padding-h__desktop;
-		}
+		// .cta-split & {
+		// 	margin-bottom: 0;
+		// 	margin-right: $cta-slogan--padding-h__desktop;
+		// }
 	}
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+}
+
+.email-form-message{
+	height: 20vh;
+	width: 20vw;
 }

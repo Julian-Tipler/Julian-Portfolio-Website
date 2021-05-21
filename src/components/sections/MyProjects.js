@@ -3,6 +3,8 @@ import classNames from "classnames";
 import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
+import { Link } from "react-router-dom";
+
 
 const propTypes = {
   ...SectionSplitProps.types,
@@ -82,12 +84,17 @@ const MyProjects = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("../../assets/images/coincase-demonstration.gif")}
-                  alt="coincase-demonstration"
-                  width={528}
-                  height={396}
-                />
+                <a
+                  target="_blank"
+                  href="https://coincase-juliantipler.herokuapp.com/#/"
+                >
+                  <Image
+                    src={require("../../assets/images/coincase-demonstration.gif")}
+                    alt="coincase-demonstration"
+                    width={528}
+                    height={396}
+                  />
+                </a>
               </div>
             </div>
 
@@ -113,12 +120,17 @@ const MyProjects = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("../../assets/images/accepting-members.gif")}
-                  alt="Features split 02"
-                  width={528}
-                  height={396}
-                />
+                <a
+                  target="_blank"
+                  href="https://findyoursquad.herokuapp.com/#/"
+                >
+                  <Image
+                    src={require("../../assets/images/accepting-members.gif")}
+                    alt="Features split 02"
+                    width={528}
+                    height={396}
+                  />
+                </a>
               </div>
             </div>
 
@@ -145,12 +157,17 @@ const MyProjects = ({
                 )}
                 data-reveal-container=".split-item"
               >
-                <Image
-                  src={require("../../assets/images/BeatMachine.gif")}
-                  alt="Features split 03"
-                  width={528}
-                  height={396}
-                />
+                <a
+                  target="_blank"
+                  href="https://julian-tipler.github.io/BeatMachine/"
+                >
+                  <Image
+                    src={require("../../assets/images/BeatMachine.gif")}
+                    alt="Features split 03"
+                    width={528}
+                    height={396}
+                  />
+                </a>
               </div>
             </div>
           </div>
