@@ -11,6 +11,7 @@
     "classnames": "^2.2.6",
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
+    "express": "^4.17.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
