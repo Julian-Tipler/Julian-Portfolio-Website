@@ -4,7 +4,6 @@ import { SectionSplitProps } from "../../utils/SectionProps";
 import SectionHeader from "./partials/SectionHeader";
 import Image from "../elements/Image";
 
-
 const propTypes = {
   ...SectionSplitProps.types,
 };
@@ -75,6 +74,13 @@ const MyProjects = ({
                   Coinbase. Coincase allows users to track, buy and sell
                   cryptocurrencies.
                 </p>
+                <a
+                  target="_blank"
+                  href="https://coincase-juliantipler.herokuapp.com/#/"
+                  rel="noopener noreferrer"
+                >
+                  <div>demo</div>
+                </a>
               </div>
               <div
                 className={classNames(
@@ -145,10 +151,7 @@ const MyProjects = ({
                 </div>
                 <h3 className="mt-0 mb-12">BeatMachine</h3>
                 <p className="m-0">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                  — Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  A synthetic drum machine
                 </p>
               </div>
               <div
