@@ -12,8 +12,10 @@
     "emailjs": "^3.4.0",
     "emailjs-com": "^2.6.4",
     "express": "^4.17.1",
+    "express-favicon": "^2.0.1",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
+    "path": "^0.12.7",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-ga": "^2.7.0",
@@ -25,15 +27,11 @@
     "type": "git",
     "url": "https://github.com/cruip/open-react-template.git"
   },
-
-
   "scripts": {
-    "dev": "react-scripts start",
-    "start": "server -s build",
+    "start": "node server.js",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
