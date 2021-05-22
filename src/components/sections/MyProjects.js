@@ -74,13 +74,18 @@ const MyProjects = ({
                   Coinbase. Coincase allows users to track, buy and sell
                   cryptocurrencies.
                 </p>
-                <a
+                <a className='demo-button'
                   target="_blank"
                   href="https://coincase-juliantipler.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
-                  <div>demo</div>
+                  DEMO
                 </a>
+                <a
+                  target="_blank"
+                  href="https://coincase-juliantipler.herokuapp.com/#/"
+                  rel="noopener noreferrer"
+                ></a>
               </div>
               <div
                 className={classNames(
@@ -118,6 +123,13 @@ const MyProjects = ({
                   Coinbase. Coincase allows users to track, buy and sell
                   cryptocurrencies.
                 </p>
+                <a className='demo-button'
+                  target="_blank"
+                  href="https://findyoursquad.herokuapp.com/#/"
+                  rel="noopener noreferrer"
+                >
+                  DEMO
+                </a>
               </div>
               <div
                 className={classNames(
@@ -151,8 +163,17 @@ const MyProjects = ({
                 </div>
                 <h3 className="mt-0 mb-12">BeatMachine</h3>
                 <p className="m-0">
-                  A synthetic drum machine
+                  A synthetic drum machine with programmable patterns and
+                  effects.
                 </p>
+                <a
+                className='demo-button'
+                  target="_blank"
+                  href="https://julian-tipler.github.io/BeatMachine/"
+                  rel="noopener noreferrer"
+                >
+                  DEMO
+                </a>
               </div>
               <div
                 className={classNames(
