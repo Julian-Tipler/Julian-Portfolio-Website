@@ -58,9 +58,10 @@ const Hero = ({
                 10/10 recommend him to any organization looking for a software
                 engineer to add to their team.{" "}" -Niko Wells
               </p>
+                    <img alt='profile' className="profile-picture" src={profilePicture} />
               <div className="container-xs">
                 <div className="reveal-from-bottom" data-reveal-delay="600">
-                  <ButtonGroup>
+                  {/* <ButtonGroup>
                     <Button
                       tag="a"
                       color="primary"
@@ -77,11 +78,10 @@ const Hero = ({
                     >
                       Github
                     </Button>
-                  </ButtonGroup>
+                  </ButtonGroup> */}
                 </div>
               </div>
             </div>
-            <img alt='profile' className="profile-picture" src={profilePicture} />
           </div>
           <div
             className="hero-figure reveal-from-bottom illustration-element-01"
