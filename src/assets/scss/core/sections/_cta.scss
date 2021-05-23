@@ -36,13 +36,25 @@
 	}
 }
 
+.form-one-level-up {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px
+}
+
 .contact-form {
 	display: flex;
 	flex-direction: column;
 	font-size: 14px;
+	width: 100%
+}
+
+.contact-form-div {
+	margin-right: 0px;
 }
 
 .email-form-message{
-	height: 20vh;
-	width: 20vw;
+	height: 200px;
+	width: 100%;
 }

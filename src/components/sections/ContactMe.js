@@ -38,14 +38,14 @@ export default function ContactMe() {
   }
 
   return (
-    <div>
+    <>
       {emailSent === true ? (
         <div>
           Thank you for your interest! I will do my best to reply to you within
           1-2 days.
         </div>
       ) : (
-        <div>
+        <div className='form-one-level-up'>
           <form className="contact-form" onSubmit={sendEmail}>
             <label>Name</label>
             <input
@@ -75,6 +75,6 @@ export default function ContactMe() {
           {emailSent === "sending" && <div>sending...</div>}
         </div>
       )}
-    </div>
+    </>
   );
 }
