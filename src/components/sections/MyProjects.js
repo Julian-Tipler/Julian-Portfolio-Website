@@ -74,7 +74,8 @@ const MyProjects = ({
                   Coinbase. Coincase allows users to track, buy and sell
                   cryptocurrencies.
                 </p>
-                <a className='demo-button'
+                <a
+                  className="demo-button"
                   target="_blank"
                   href="https://coincase-juliantipler.herokuapp.com/#/"
                   rel="noopener noreferrer"
@@ -119,11 +120,14 @@ const MyProjects = ({
                 </div>
                 <h3 className="mt-0 mb-12">Find Your Squad</h3>
                 <p className="m-0">
-                  Coincase is a clone of the cryptocurrency trading site
-                  Coinbase. Coincase allows users to track, buy and sell
-                  cryptocurrencies.
+                  FindYourSquad is a social platform for gamers that matches
+                  teammates based on play style and skill. Through these
+                  connections, gamers can communicate with one another, arrange
+                  schedules, view each other's gaming profile, and deploy into
+                  their favorite games together.
                 </p>
-                <a className='demo-button'
+                <a
+                  className="demo-button"
                   target="_blank"
                   href="https://findyoursquad.herokuapp.com/#/"
                   rel="noopener noreferrer"
@@ -163,11 +167,11 @@ const MyProjects = ({
                 </div>
                 <h3 className="mt-0 mb-12">BeatMachine</h3>
                 <p className="m-0">
-                  A synthetic drum machine with programmable patterns and
+                  BeatMachine is a synthetic drum machine with programmable patterns and
                   effects.
                 </p>
                 <a
-                className='demo-button'
+                  className="demo-button"
                   target="_blank"
                   href="https://julian-tipler.github.io/BeatMachine/"
                   rel="noopener noreferrer"
