@@ -45,7 +45,7 @@ const MySkills = ({
   const sectionHeader = {
     title: "What I know",
     paragraph:
-      "At App Academy I learned a variety of languages and libraries and delved deep into each of them. I know have the skills and experience to write user-friendly full stack applications",
+      "At App Academy I learned a variety of languages and libraries and delved deep into each of them. I now have the skills and experience to write user-friendly full stack applications",
   };
 
   const skills = {
