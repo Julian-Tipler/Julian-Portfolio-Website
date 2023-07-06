@@ -1,6 +1,9 @@
 {
   "name": "open-react-template",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.16.1"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -14,7 +17,7 @@
     "express": "^4.17.1",
     "express-favicon": "^2.0.1",
     "lodash": "^4.17.15",
-    "node-sass": "^4.13.1",
+    "node-sass": "^4.14.0",
     "nodemon": "^2.0.7",
     "path": "^0.12.7",
     "react": "^16.14.0",
