@@ -3,7 +3,7 @@ import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
-import profilePicture from "../../assets/images/profile-picture.jpg"
+import profilePicture from "../../assets/images/profile-picture.jpg";
 
 const propTypes = {
   ...SectionProps.types,
@@ -23,7 +23,6 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
-
   const outerClasses = classNames(
     "hero section center-content",
     topOuterDivider && "has-top-divider",
@@ -41,53 +40,43 @@ const Hero = ({
 
   return (
     <section {...props} className={outerClasses}>
-      <div className="container-sm">
-        <div className={innerClasses}>
-          <div className="hero-content">
+      <div className="container">
+        <div
+          className={innerClasses}
+          style={{
+            display: "flex",
+            gap: "50px",
+          }}
+        >
+          <div style={{ flex: 1 }}>
+            <img
+              alt="profile"
+              className="profile-picture"
+              src={profilePicture}
+            />
+            <h1
+              className="mt-0 mb-16 reveal-from-bottom"
+              data-reveal-delay="200"
+            >
+              Julian Tipler
+            </h1>
+          </div>
+          <div className="hero-qoute-content" style={{ flex: 2 }}>
             <div className="left-side">
-              <h1
-                className="mt-0 mb-16 reveal-from-bottom"
-                data-reveal-delay="200"
-              >
-                Julian Tipler
-              </h1>
-              <p className='hero-qoute'>
+              <p className="hero-qoute">
                 "Julian was great at troubleshooting any bugs in our code, was
                 always available, and was the main facilitator of our strategic
                 planning discussions. He was a pleasure to work with and I would
                 10/10 recommend him to any organization looking for a software
-                engineer to add to their team.{" "}" -Niko Wells
+                engineer to add to their team. " -Niko Wells
               </p>
-                    <img alt='profile' className="profile-picture" src={profilePicture} />
-              <div className="container-xs">
-                <div className="reveal-from-bottom" data-reveal-delay="600">
-                  {/* <ButtonGroup>
-                    <Button
-                      tag="a"
-                      color="primary"
-                      wideMobile
-                      href="https://www.linkedin.com/in/julian-t-87a2a0a4/"
-                    >
-                      LinkedIn
-                    </Button>
-                    <Button
-                      tag="a"
-                      color="dark"
-                      wideMobile
-                      href="https://github.com/Julian-Tipler"
-                    >
-                      Github
-                    </Button>
-                  </ButtonGroup> */}
-                </div>
-              </div>
             </div>
           </div>
-          <div
+          {/* <div
             className="hero-figure reveal-from-bottom illustration-element-01"
             data-reveal-value="20px"
             data-reveal-delay="800"
-          ></div>
+          ></div> */}
         </div>
       </div>
     </section>
