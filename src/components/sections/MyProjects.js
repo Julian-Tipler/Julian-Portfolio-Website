@@ -62,13 +62,58 @@ const MyProjects = ({
           <div className={splitClasses}>
             <div className="split-item">
               <div
+                className="split-item-content center-content-mobile reveal-from-right"
+                data-reveal-container=".split-item"
+              >
+                <h3 className="mt-0 mb-12">Save the Whales</h3>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  React, Firebase
+                </div>
+                <p className="m-0">
+                  Save the Whales is an Orca Whale research tool I made for
+                  ***Chloe's company***. It allows researchers to build complex
+                  whale pedigrees and record their statuses in the field.
+                </p>
+                <a
+                  className="demo-button"
+                  target="_blank"
+                  href="https://save-the-whales-ee45b.web.app/pedigrees/NLHcwscw0OpP26ERfsR8"
+                  rel="noopener noreferrer"
+                >
+                  DEMO
+                </a>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+              >
+                <a
+                  target="_blank"
+                  href="https://findyoursquad.herokuapp.com/#/"
+                  rel="noopener noreferrer"
+                >
+                  {/* <Image
+                    src={require("../../assets/images/accepting-members.gif")}
+                    alt="Features split 02"
+                    width={528}
+                    height={396}
+                  /> */}
+                </a>
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
+                <h3 className="mt-0 mb-12">Coincase </h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Ruby on Rails / React
                 </div>
-                <h3 className="mt-0 mb-12">Coincase </h3>
                 <p className="m-0">
                   Coincase is a clone of the cryptocurrency trading site
                   Coinbase. Coincase allows users to track, buy and sell
@@ -115,10 +160,10 @@ const MyProjects = ({
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
               >
+                <h3 className="mt-0 mb-12">Find Your Squad</h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   MERN (MongoDB, Express, React, Nodejs)
                 </div>
-                <h3 className="mt-0 mb-12">Find Your Squad</h3>
                 <p className="m-0">
                   FindYourSquad is a social platform for gamers that matches
                   teammates based on play style and skill. Through these
@@ -162,13 +207,13 @@ const MyProjects = ({
                 className="split-item-content center-content-mobile reveal-from-left"
                 data-reveal-container=".split-item"
               >
+                <h3 className="mt-0 mb-12">BeatMachine</h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Javascript
                 </div>
-                <h3 className="mt-0 mb-12">BeatMachine</h3>
                 <p className="m-0">
-                  BeatMachine is a synthetic drum machine with programmable patterns and
-                  effects.
+                  BeatMachine is a synthetic drum machine with programmable
+                  patterns and effects.
                 </p>
                 <a
                   className="demo-button"
