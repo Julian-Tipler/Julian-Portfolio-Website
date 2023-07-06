@@ -45,7 +45,7 @@ const MySkills = ({
   const sectionHeader = {
     title: "What I know",
     paragraph:
-      "At App Academy I learned a variety of languages and libraries and delved deep into each of them. I now have the skills and experience to write user-friendly full stack applications",
+      "At App Academy I learned a variety of languages and libraries and delved deep into each of them. I built upon these skills at Worktango as a fullstack developer.",
   };
 
   const skills = {
@@ -53,14 +53,23 @@ const MySkills = ({
       name: "Javascript",
       icon: "devicon-javascript-plain colored",
     },
+    Typescript: {
+      name: "Typescript",
+      icon: "devicon-typescript-plain colored",
+    },
     React: { name: "React", icon: "devicon-react-plain colored" },
     Ruby: { name: "Ruby", icon: "devicon-ruby-plain colored" },
     Redux: { name: "Redux", icon: "devicon-redux-plain colored" },
+    Graphql: { name: "Graphql", icon: "devicon-graphql-plain colored" },
     Nodejs: { name: "Nodejs", icon: "devicon-nodejs-plain colored" },
     Express: { name: "Express", icon: "devicon-express-original colored" },
     MongoDB: {
       name: "MongoDB",
       icon: "devicon-mongodb-plain-wordmark colored",
+    },
+    Postgresql: {
+      name: "Postgresql",
+      icon: "devicon-postgresql-plain colored",
     },
   };
 
@@ -70,7 +79,7 @@ const MySkills = ({
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-            {Object.keys(skills).map((skill,i) => {
+            {Object.keys(skills).map((skill, i) => {
               return <Skill key={i} skill={skills[skill]} />;
             })}
           </div>

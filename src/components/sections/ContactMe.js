@@ -5,7 +5,7 @@ export default function ContactMe() {
   const [email, setEmail] = useState({
     name: "",
     address: "",
-    message: ""
+    message: "",
   });
   const [emailSent, setEmailSent] = useState(false);
 
@@ -45,34 +45,37 @@ export default function ContactMe() {
           1-2 days.
         </div>
       ) : (
-        <div className='form-one-level-up'>
-          <form className="contact-form" onSubmit={sendEmail}>
-            <label>Name</label>
-            <input
-              onChange={(e) => handleChange(e, email, setEmail)}
-              className="email-form-name"
-              type="text"
-              value={email.name}
-              name="name"
-            />
-            <label>Email Address</label>
-            <input
-              onChange={(e) => handleChange(e, email, setEmail)}
-              className="email-form-address"
-              type="text"
-              value={email.address}
-              name="address"
-            />
-            <label>Message</label>
-            <textarea
-              onChange={(e) => handleChange(e, email, setEmail)}
-              className="email-form-message"
-              value={email.message}
-              name="message"
-            />
-            <input type="submit" value="Send" />
-          </form>
-          {emailSent === "sending" && <div>sending...</div>}
+        <div className="form-one-level-up">
+          {emailSent === "sending" ? (
+            <div>sending...</div>
+          ) : (
+            <form className="contact-form" onSubmit={sendEmail}>
+              <label>Name</label>
+              <input
+                onChange={(e) => handleChange(e, email, setEmail)}
+                className="email-form-name"
+                type="text"
+                value={email.name}
+                name="name"
+              />
+              <label>Email Address</label>
+              <input
+                onChange={(e) => handleChange(e, email, setEmail)}
+                className="email-form-address"
+                type="text"
+                value={email.address}
+                name="address"
+              />
+              <label>Message</label>
+              <textarea
+                onChange={(e) => handleChange(e, email, setEmail)}
+                className="email-form-message"
+                value={email.message}
+                name="message"
+              />
+              <input type="submit" value="Send" />
+            </form>
+          )}
         </div>
       )}
     </>
