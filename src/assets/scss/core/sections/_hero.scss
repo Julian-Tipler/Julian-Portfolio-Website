@@ -40,6 +40,14 @@
       }
     }
   }
+  // Added here to flex to column when viewing on iphone
+  .hero-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    min-height: 75vh;
+  }
 }
 
 @include media(">medium") {
@@ -49,8 +57,14 @@
       padding-bottom: $hero--padding-b__desktop;
     }
   }
-
+  // Added here to flex to row when viewing on computer
   .hero-inner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    min-height: 75vh;
+
     // Affects only hero full
     > .hero-content + .hero-figure,
     > .hero-figure + .hero-content {
@@ -61,27 +75,25 @@
 
 .left-side {
   flex: 1;
-}
-
-.profile-picture {
-  margin-bottom: 10px;
+  .profile-picture {
+    margin-bottom: 10px;
+    height: 500px;
+  }
 }
 
 .right-side {
   flex: 2;
-}
-
-.hero-qoute-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5px;
-  margin: 10px;
-  border: 3px solid rgb(86, 88, 221);
-  border-radius: 5px;
-}
-
-.hero-qoute {
-  margin: 10px;
+  .hero-qoute-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 10px;
+    border: 3px solid rgb(86, 88, 221);
+    border-radius: 5px;
+    .hero-qoute {
+      margin: 10px;
+    }
+  }
 }

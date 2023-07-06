@@ -43,12 +43,6 @@ const Hero = ({
       <div className="container">
         <div
           className={innerClasses}
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "50px",
-            height: "80vh",
-          }}
         >
           {/* left */}
           <div className="left-side">
