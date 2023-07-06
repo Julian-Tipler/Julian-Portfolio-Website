@@ -50,7 +50,8 @@ const Hero = ({
             height: "80vh",
           }}
         >
-          <div style={{ flex: 1 }}>
+          {/* left */}
+          <div className="left-side">
             <img
               alt="profile"
               className="profile-picture reveal-from-bottom"
@@ -63,14 +64,15 @@ const Hero = ({
               Julian Tipler
             </h1>
           </div>
-          <div className="hero-qoute-content" style={{ flex: 2 }}>
-            <div className="left-side">
+          {/* right */}
+          <div className="right-side">
+            <div className="hero-qoute-content">
               <p className="hero-qoute">
                 "Julian was great at troubleshooting any bugs in our code, was
                 always available, and was the main facilitator of our strategic
                 planning discussions. He was a pleasure to work with and I would
                 10/10 recommend him to any organization looking for a software
-                engineer to add to their team. " -Niko Wells
+                engineer to add to their team." -Niko Wells
               </p>
             </div>
           </div>
