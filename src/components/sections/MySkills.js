@@ -45,7 +45,7 @@ const MySkills = ({
   const sectionHeader = {
     title: "What I know",
     paragraph:
-      "At App Academy I learned a variety of languages and libraries and delved deep into each of them. I built upon these skills at Worktango as a fullstack developer.",
+      "With two years of full-stack experience at a dynamic startup, I offer a valuable blend of front-end and back-end skills. I'm quick to pick up new technologies and am always looking to improve my existing skills.",
   };
 
   const skills = {
@@ -70,6 +70,10 @@ const MySkills = ({
     Postgresql: {
       name: "Postgresql",
       icon: "devicon-postgresql-plain colored",
+    },
+    Firebase: {
+      name: "Firebase",
+      icon: "devicon-firebase-plain colored",
     },
   };
 

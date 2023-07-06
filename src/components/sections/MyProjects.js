@@ -51,7 +51,7 @@ const MyProjects = ({
   const sectionHeader = {
     title: "What I've Made",
     paragraph:
-      "The following projects were built around three of my favorite topics: finance, gaming, and music.",
+      "The following are my favorite personal projects. Working on these has kept my skills sharp outside of work while allowing me to explore new technologies and ideas.",
   };
 
   return (
@@ -67,9 +67,9 @@ const MyProjects = ({
               >
                 <h3 className="mt-0 mb-12">Save the Whales</h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  React, Firebase
+                  Typescript, React, Firebase
                 </div>
-                <p className="m-0">
+                <p className="feature-description">
                   Save the Whales is an Orca Whale research tool I made for
                   ***Chloe's company***. It allows researchers to build complex
                   whale pedigrees and record their statuses in the field.
@@ -112,9 +112,9 @@ const MyProjects = ({
               >
                 <h3 className="mt-0 mb-12">Coincase </h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Ruby on Rails / React
+                  React, Redux, Ruby on Rails
                 </div>
-                <p className="m-0">
+                <p className="feature-description">
                   Coincase is a clone of the cryptocurrency trading site
                   Coinbase. Coincase allows users to track, buy and sell
                   cryptocurrencies.
@@ -127,11 +127,6 @@ const MyProjects = ({
                 >
                   DEMO
                 </a>
-                <a
-                  target="_blank"
-                  href="https://coincase-juliantipler.herokuapp.com/#/"
-                  rel="noopener noreferrer"
-                ></a>
               </div>
               <div
                 className={classNames(
@@ -164,7 +159,7 @@ const MyProjects = ({
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   MERN (MongoDB, Express, React, Nodejs)
                 </div>
-                <p className="m-0">
+                <p className="feature-description">
                   FindYourSquad is a social platform for gamers that matches
                   teammates based on play style and skill. Through these
                   connections, gamers can communicate with one another, arrange
@@ -211,7 +206,7 @@ const MyProjects = ({
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Javascript
                 </div>
-                <p className="m-0">
+                <p className="feature-description">
                   BeatMachine is a synthetic drum machine with programmable
                   patterns and effects.
                 </p>
