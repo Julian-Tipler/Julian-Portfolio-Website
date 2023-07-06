@@ -53,14 +53,23 @@ const MySkills = ({
       name: "Javascript",
       icon: "devicon-javascript-plain colored",
     },
+    Typescript: {
+      name: "Typescript",
+      icon: "devicon-typescript-plain colored",
+    },
     React: { name: "React", icon: "devicon-react-plain colored" },
     Ruby: { name: "Ruby", icon: "devicon-ruby-plain colored" },
     Redux: { name: "Redux", icon: "devicon-redux-plain colored" },
+    Graphql: { name: "Graphql", icon: "devicon-graphql-plain colored" },
     Nodejs: { name: "Nodejs", icon: "devicon-nodejs-plain colored" },
     Express: { name: "Express", icon: "devicon-express-original colored" },
     MongoDB: {
       name: "MongoDB",
       icon: "devicon-mongodb-plain-wordmark colored",
+    },
+    Postgresql: {
+      name: "Postgresql",
+      icon: "devicon-postgresql-plain colored",
     },
   };
 
@@ -70,7 +79,7 @@ const MySkills = ({
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
-            {Object.keys(skills).map((skill,i) => {
+            {Object.keys(skills).map((skill, i) => {
               return <Skill key={i} skill={skills[skill]} />;
             })}
           </div>

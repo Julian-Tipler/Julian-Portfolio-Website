@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Skill(props) {
     return (
-      <div>
+      <div style={{width: "150px"}}>
         <div className="tiles-item reveal-from-bottom">
           <div className="tiles-item-inner">
             <div className="features-tiles-item-header">
