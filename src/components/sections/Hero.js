@@ -45,13 +45,15 @@ const Hero = ({
           className={innerClasses}
           style={{
             display: "flex",
+            alignItems: "center",
             gap: "50px",
+            height: "80vh",
           }}
         >
           <div style={{ flex: 1 }}>
             <img
               alt="profile"
-              className="profile-picture"
+              className="profile-picture reveal-from-bottom"
               src={profilePicture}
             />
             <h1
