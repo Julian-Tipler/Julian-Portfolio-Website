@@ -80,7 +80,7 @@ const MyProjects = ({
                   href="https://save-the-whales-ee45b.web.app/pedigrees/NLHcwscw0OpP26ERfsR8"
                   rel="noopener noreferrer"
                 >
-                  DEMO
+                  Demo
                 </a>
               </div>
               <div
@@ -125,7 +125,7 @@ const MyProjects = ({
                   href="https://coincase-juliantipler.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
-                  DEMO
+                  Demo
                 </a>
               </div>
               <div
@@ -172,7 +172,7 @@ const MyProjects = ({
                   href="https://findyoursquad.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
-                  DEMO
+                  Demo
                 </a>
               </div>
               <div
@@ -216,7 +216,7 @@ const MyProjects = ({
                   href="https://julian-tipler.github.io/BeatMachine/"
                   rel="noopener noreferrer"
                 >
-                  DEMO
+                  Demo
                 </a>
               </div>
               <div

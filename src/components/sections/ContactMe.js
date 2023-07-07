@@ -72,6 +72,7 @@ export default function ContactMe() {
               />
               <label>Message</label>
               <textarea
+                style={{ resize: "none" }}
                 onChange={(e) => handleChange(e, email, setEmail)}
                 className="email-form-message"
                 value={email.message}
