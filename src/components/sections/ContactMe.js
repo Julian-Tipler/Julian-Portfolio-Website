@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
 
 export default function ContactMe() {
   const [email, setEmail] = useState({
     name: "",
-    address: "",
+    email_address: "",
     message: "",
   });
   const [emailSent, setEmailSent] = useState(false);
+  const form = useRef();
 
   const handleChange = (e, state, setState) => {
     e.preventDefault();
@@ -20,12 +21,15 @@ export default function ContactMe() {
   function sendEmail(e) {
     e.preventDefault();
     setEmailSent("sending");
+    console.log(e.target);
     emailjs
       .sendForm(
-        "service_w6igvfk",
-        "contact_form",
-        e.target,
-        "user_p0OijmXOMzDtOf8rMKWjR"
+        // "service_w6igvfk",
+        "service_fzglrxk",
+        "template_j999mfm",
+        form.current,
+        // "user_p0OijmXOMzDtOf8rMKWjR"
+        "BL4q56RTnt78SIS0x"
       )
       .then(
         (result) => {
@@ -49,7 +53,7 @@ export default function ContactMe() {
           {emailSent === "sending" ? (
             <div>sending...</div>
           ) : (
-            <form className="contact-form" onSubmit={sendEmail}>
+            <form className="contact-form" ref={form} onSubmit={sendEmail}>
               <label>Name</label>
               <input
                 onChange={(e) => handleChange(e, email, setEmail)}
@@ -64,7 +68,7 @@ export default function ContactMe() {
                 className="email-form-address"
                 type="text"
                 value={email.address}
-                name="address"
+                name="email_address"
               />
               <label>Message</label>
               <textarea
