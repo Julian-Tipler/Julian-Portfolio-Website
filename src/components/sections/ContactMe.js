@@ -54,7 +54,7 @@ export default function ContactMe() {
             <div>sending...</div>
           ) : (
             <form className="contact-form" ref={form} onSubmit={sendEmail}>
-              <label>Name</label>
+              <h6 className="m-0">Name</h6>
               <input
                 onChange={(e) => handleChange(e, email, setEmail)}
                 className="email-form-name"
@@ -62,7 +62,7 @@ export default function ContactMe() {
                 value={email.name}
                 name="name"
               />
-              <label>Email Address</label>
+              <h6 className="m-0">Email Address</h6>
               <input
                 onChange={(e) => handleChange(e, email, setEmail)}
                 className="email-form-address"
@@ -70,7 +70,7 @@ export default function ContactMe() {
                 value={email.address}
                 name="email_address"
               />
-              <label>Message</label>
+              <h6 className="m-0">Message</h6>
               <textarea
                 style={{ resize: "none" }}
                 onChange={(e) => handleChange(e, email, setEmail)}

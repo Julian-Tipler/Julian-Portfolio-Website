@@ -47,6 +47,7 @@ const Cta = ({
         <div className={innerClasses}>
           <div className="cta-slogan">
             <h3 className="m-0">Looking forward to hearing from you!</h3>
+            <h5 className="m-1">If you prefer, email me directly at tipler.julian@gmail.com</h5>
           </div>
           <ContactMe />
         </div>
