@@ -122,7 +122,7 @@ const MyProjects = ({
                 <a
                   className="demo-button"
                   target="_blank"
-                  href="https://coincase-juliantipler.herokuapp.com/#/"
+                  href="https://coincase-0cf51e999467.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
                   Demo
@@ -137,7 +137,7 @@ const MyProjects = ({
               >
                 <a
                   target="_blank"
-                  href="https://coincase-juliantipler.herokuapp.com/#/"
+                  href="https://coincase-0cf51e999467.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
                   <Image
