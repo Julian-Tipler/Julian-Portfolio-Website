@@ -169,7 +169,7 @@ const MyProjects = ({
                 <a
                   className="demo-button"
                   target="_blank"
-                  href="https://findyoursquad.herokuapp.com/#/"
+                  // href="https://findyoursquad.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
                   Demo
@@ -184,7 +184,7 @@ const MyProjects = ({
               >
                 <a
                   target="_blank"
-                  href="https://findyoursquad.herokuapp.com/#/"
+                  // href="https://findyoursquad.herokuapp.com/#/"
                   rel="noopener noreferrer"
                 >
                   <Image
