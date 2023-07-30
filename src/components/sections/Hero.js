@@ -41,9 +41,7 @@ const Hero = ({
   return (
     <section {...props} className={outerClasses}>
       <div className="container">
-        <div
-          className={innerClasses}
-        >
+        <div className={innerClasses}>
           {/* left */}
           <div className="left-side">
             <img
@@ -60,7 +58,7 @@ const Hero = ({
           </div>
           {/* right */}
           <div className="right-side">
-            <div className="hero-qoute-content">
+            <div className="hero-qoute-content reveal-from-right">
               <p className="hero-qoute">
                 "Julian was great at troubleshooting any bugs in our code, was
                 always available, and was the main facilitator of our strategic
@@ -68,6 +66,14 @@ const Hero = ({
                 10/10 recommend him to any organization looking for a software
                 engineer to add to their team." -Niko Wells
               </p>
+            </div>
+            <div
+              style={{ alignItems: "flex-start" }}
+              className="hero-qoute-content reveal-from-right"
+            >
+              {/* Chloe qoute */}
+              <p className="hero-qoute">Years of programming experience: 4</p>
+              <p className="hero-qoute">Years of industry experience: 2</p>
             </div>
           </div>
           {/* <div
