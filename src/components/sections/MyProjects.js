@@ -92,15 +92,15 @@ const MyProjects = ({
               >
                 <a
                   target="_blank"
-                  href="https://findyoursquad.herokuapp.com/#/"
+                  href="https://save-the-whales-ee45b.web.app/"
                   rel="noopener noreferrer"
                 >
-                  {/* <Image
-                    src={require("../../assets/images/accepting-members.gif")}
+                  <Image
+                    src={require("../../assets/images/save-the-whales.png")}
                     alt="Features split 02"
                     width={528}
                     height={396}
-                  /> */}
+                  />
                 </a>
               </div>
             </div>
