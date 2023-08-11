@@ -67,14 +67,26 @@ const Hero = ({
                 engineer to add to their team." -Niko Wells
               </p>
             </div>
-            <div
+            <div className="hero-qoute-content reveal-from-right">
+              <p className="hero-qoute"> "You took such
+                ownership of building out Points API functionality (a MAJOR
+                dependency of building new Incentives). You saw that epic
+                through from beginning to end, grinding and problem solving and
+                getting it done. ... The day we
+                could successfully claim an Incentive and it resulted in points
+                for the user, I thought "Right, of course this works. Julian
+                nailed it." I have to remember and worry about so many things
+                (too many) as a PM, and I can't tell you what a huge gift it is
+                to get to forget. Keep up the awesome work." -Alyssa Van Buren (figure out name spelling)
+              </p>
+            </div>
+            {/* <div
               style={{ alignItems: "flex-start" }}
               className="hero-qoute-content reveal-from-right"
             >
-              {/* Chloe qoute */}
               <p className="hero-qoute">Years of programming experience: 4</p>
               <p className="hero-qoute">Years of industry experience: 2</p>
-            </div>
+            </div> */}
           </div>
           {/* <div
             className="hero-figure reveal-from-bottom illustration-element-01"

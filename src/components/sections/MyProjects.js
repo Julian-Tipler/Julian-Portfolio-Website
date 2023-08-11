@@ -65,19 +65,19 @@ const MyProjects = ({
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
               >
-                <h3 className="mt-0 mb-12">Save the Whales</h3>
+                <h3 className="mt-0 mb-12">Orca Research</h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Typescript, React, Firebase
                 </div>
                 <p className="feature-description">
-                  Save the Whales is an Orca Whale research tool I made for
-                  ***Chloe's company***. It allows researchers to build complex
+                  Save the Whales is an Orca Whale research tool I made for a my
+                  friend's PhD thesis. It allows researchers to build complex
                   whale pedigrees and record their statuses in the field.
                 </p>
                 <a
                   className="demo-button"
                   target="_blank"
-                  href="https://save-the-whales-ee45b.web.app/pedigrees/NLHcwscw0OpP26ERfsR8"
+                  href="https://save-the-whales-ee45b.web.app/"
                   rel="noopener noreferrer"
                 >
                   Demo
@@ -92,15 +92,15 @@ const MyProjects = ({
               >
                 <a
                   target="_blank"
-                  href="https://findyoursquad.herokuapp.com/#/"
+                  href="https://save-the-whales-ee45b.web.app/"
                   rel="noopener noreferrer"
                 >
-                  {/* <Image
-                    src={require("../../assets/images/accepting-members.gif")}
+                  <Image
+                    src={require("../../assets/images/save-the-whales.png")}
                     alt="Features split 02"
                     width={528}
                     height={396}
-                  /> */}
+                  />
                 </a>
               </div>
             </div>
