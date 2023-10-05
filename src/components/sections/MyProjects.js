@@ -92,7 +92,7 @@ const MyProjects = ({
               >
                 <a
                   target="_blank"
-                  href="https://save-the-whales-ee45b.web.app/"
+                  href="https://save-the-whales-ee45b.web.app/pods/3KMIIoqRyWVhr8x8vABb"
                   rel="noopener noreferrer"
                 >
                   <Image
