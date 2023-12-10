@@ -13,7 +13,7 @@ const Home = () => {
       <MySkills id="my-skills"/>
       <MyProjects id="my-projects" invertMobile topDivider imageFill className="illustration-section-02" />
       {/* <Testimonial id="my-testimonials" topDivider /> */}
-      <Cta split topDivider />
+      <Cta id="email-call-to-action" split topDivider />
     </>
   );
 }
