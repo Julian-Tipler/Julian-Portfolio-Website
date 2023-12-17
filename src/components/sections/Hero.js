@@ -82,19 +82,7 @@ const Hero = ({
               </p>
               <p className="person-name">-Alyssa Venere Braun</p>
             </div>
-            {/* <div
-              style={{ alignItems: "flex-start" }}
-              className="hero-qoute-content reveal-from-right"
-            >
-              <p className="hero-qoute">Years of programming experience: 4</p>
-              <p className="hero-qoute">Years of industry experience: 2</p>
-            </div> */}
           </div>
-          {/* <div
-            className="hero-figure reveal-from-bottom illustration-element-01"
-            data-reveal-value="20px"
-            data-reveal-delay="800"
-          ></div> */}
         </div>
       </div>
     </section>

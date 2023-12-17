@@ -62,17 +62,61 @@ const MyProjects = ({
           <div className={splitClasses}>
             <div className="split-item">
               <div
+                className="split-item-content center-content-mobile reveal-from-left"
+                data-reveal-container=".split-item"
+              >
+                <h3 className="mt-0 mb-12">WiseGPT</h3>
+                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                  React, Supabase, ChatGPT
+                </div>
+                <p className="feature-description">
+                  An extension to add desired features to ChatGPT’s interface
+                  including text autocomplete and saved prompts.
+                </p>
+                <a
+                  className="demo-button"
+                  target="_blank"
+                  href="https://github.com/Julian-Tipler/chat-gpt-extension"
+                  rel="noopener noreferrer"
+                >
+                  Github
+                </a>
+              </div>
+              <div
+                className={classNames(
+                  "split-item-image center-content-mobile reveal-from-bottom",
+                  imageFill && "split-item-image-fill"
+                )}
+                data-reveal-container=".split-item"
+              >
+                <a
+                  target="_blank"
+                  href="https://github.com/Julian-Tipler/chat-gpt-extension"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src={require("../../assets/images/wise-gpt.png")}
+                    alt="Features split 02"
+                    width={528}
+                    height={396}
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="split-item">
+              <div
                 className="split-item-content center-content-mobile reveal-from-right"
                 data-reveal-container=".split-item"
               >
-                <h3 className="mt-0 mb-12">Orca Research</h3>
+                <h3 className="mt-0 mb-12">Orca Research Tool</h3>
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
                   Typescript, React, Firebase
                 </div>
                 <p className="feature-description">
-                  Save the Whales is an Orca Whale research tool I made for a my
-                  friend's PhD thesis. It allows researchers to build complex
-                  whale pedigrees and record their statuses in the field.
+                  History of the Southern residents is an Orca Whale research
+                  tool I made for Chloe Kotik's PhD thesis. It allows researchers
+                  to build complex whale pedigrees and record their demographic information.
                 </p>
                 <a
                   className="demo-button"
@@ -116,7 +160,7 @@ const MyProjects = ({
                 </div>
                 <p className="feature-description">
                   Coincase is a clone of the cryptocurrency trading site
-                  Coinbase. Coincase allows users to track, buy and sell
+                  Coinbase. Coincase allows users to track, buy and sell mock
                   cryptocurrencies.
                 </p>
                 <a
@@ -169,10 +213,10 @@ const MyProjects = ({
                 <a
                   className="demo-button"
                   target="_blank"
-                  // href="https://findyoursquad.herokuapp.com/#/"
+                  href="https://github.com/Julian-Tipler/FindYourSquad"
                   rel="noopener noreferrer"
                 >
-                  Demo
+                  Github
                 </a>
               </div>
               <div
@@ -184,7 +228,7 @@ const MyProjects = ({
               >
                 <a
                   target="_blank"
-                  // href="https://findyoursquad.herokuapp.com/#/"
+                  href="https://github.com/Julian-Tipler/FindYourSquad"
                   rel="noopener noreferrer"
                 >
                   <Image
